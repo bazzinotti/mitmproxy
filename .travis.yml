@@ -58,7 +58,7 @@ after_success:
   - |
     if [[ $TRAVIS_OS_NAME == "osx" ]]
     then
-        brew install curl
+        brew install curl --with-libssh2
         brew link curl --force
         pip install virtualenv
         git clone https://github.com/mitmproxy/release.git ../release
