@@ -68,7 +68,7 @@ setup(
         ':sys_platform != "win32"': [
             "urwid~=1.3.1",
         ],
-        "':python_version < \"3.4\"'": [
+        ":python_version != '3.4'": [
             "enum34~=1.0.4",
         ],
         'dev': [
